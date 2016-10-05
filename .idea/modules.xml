@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-gif-drawable-1.1.17/android-gif-drawable-1.1.17.iml" filepath="$PROJECT_DIR$/android-gif-drawable-1.1.17/android-gif-drawable-1.1.17.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/budgeter.iml" filepath="$PROJECT_DIR$/budgeter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/calligraphy-2.2.0/calligraphy-2.2.0.iml" filepath="$PROJECT_DIR$/calligraphy-2.2.0/calligraphy-2.2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mpandroidchartlibrary-2-2-4/mpandroidchartlibrary-2-2-4.iml" filepath="$PROJECT_DIR$/mpandroidchartlibrary-2-2-4/mpandroidchartlibrary-2-2-4.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_height">84dp</dimen>
+    <dimen name="circle_width_height">59dp</dimen>
+    <dimen name="qty_height">17dp</dimen>
+    <dimen name="qty_textSize">13sp</dimen>
+    <dimen name="first_letter_textSize">30sp</dimen>
+    <dimen name="primary_text_size">23sp</dimen>
+    <dimen name="secondary_text_size">17sp</dimen>
+
+    <!-- Item By Date -->
+    <dimen name="item_height_bydate">68dp</dimen>
+    <dimen name="circle_width_height_bydate">52dp</dimen>
+    <dimen name="first_letter_textSize_bydate">27sp</dimen>
+    <dimen name="primary_text_size_bydate">20sp</dimen>
+
+    <!--welcome screen -->
+    <dimen name="padding_bottom">75dp</dimen>
+    <dimen name="gif_paddingtop">80dp</dimen>
+
+    <dimen name="gif_width">400dp</dimen>
+    <dimen name="gif_height">600dp</dimen>
+
+
+
+</resources>

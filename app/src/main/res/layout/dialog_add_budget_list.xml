@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    android:weightSum="8">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_list"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_budget_list"
+            android:layout_margin="5dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:weightSum="2"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:paddingLeft="4dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:id="@+id/etListName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Budget Plan Name"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp">
+            <EditText
+                android:id="@+id/etBudgetAmount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Budget Amount"
+                android:inputType="numberDecimal" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingTop="15dp"-->
+    <!--android:paddingLeft="25dp"-->
+    <!--android:paddingRight="25dp">-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tilListName">-->
+        <!--<EditText-->
+            <!--android:id="@+id/etListName"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Budget Plan Name"-->
+            <!--android:singleLine="true"-->
+            <!--android:textAlignment="center" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tilBudgetAmount"-->
+        <!--android:layout_below="@+id/tilListName">-->
+        <!--<EditText-->
+            <!--android:id="@+id/etBudgetAmount"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:hint="Budget Amount"-->
+            <!--android:singleLine="true"-->
+            <!--android:textAlignment="center" />-->
+    <!--</android.support.design.widget.TextInputLayout>-->
+
+    <!--&lt;!&ndash;<RadioGroup&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/rgBudgetType"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_below="@+id/tilListName"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="10dp">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<RadioButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Daily Budget"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/rbDailyBudget"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginEnd="20dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:checked="true"/>&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<RadioButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:text="Monthly Budget"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/rbMonthlyBudget" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</RadioGroup>&ndash;&gt;-->
+<!--</RelativeLayout>-->

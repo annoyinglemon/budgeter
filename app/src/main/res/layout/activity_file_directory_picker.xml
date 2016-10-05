@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="10dp"
+    tools:context="com.lemond.kurt.budgeter.FileDirectoryPickerActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+        <TextView
+            android:id="@+id/tvTitleSelect"
+            android:layout_width="0dp"
+            android:layout_weight="60"
+            android:layout_height="wrap_content"
+            android:text="Select Directory"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:textSize="25sp"
+            android:textColor="@color/textSecondary"
+            fontPath="fonts/Comfortaa-Bold.ttf"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_marginTop="8dp">
+
+        <ImageButton
+            android:id="@+id/bnFileNew"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="12"
+            android:src="@drawable/ic_add_folder"
+            android:minHeight="32dp"
+            android:tint="@color/md_white_1000"
+            android:background="@drawable/filepicker_button_disabled"
+            android:layout_marginEnd="0.5dp"
+            />
+        <ImageButton
+            android:id="@+id/bnBack"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_weight="12"
+            android:minHeight="32dp"
+            android:tint="@color/md_white_1000"
+            android:background="@drawable/filepicker_button_disabled"
+            android:layout_marginEnd="0.5dp"
+            />
+        <TextView
+            android:id="@+id/tvFileNamePath"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Root/SD Card/Documents/Sample Folder "
+            android:ellipsize="start"
+            android:singleLine="true"
+            fontPath="fonts/Comfortaa-Bold.ttf"
+            android:textSize="12sp"
+            android:background="@drawable/edittext_square"
+            android:textColor="@color/textPrimary"
+            android:paddingTop="9dp"
+            android:paddingStart="2dp"
+            android:paddingEnd="2dp"
+            android:paddingBottom="9dp"
+            android:layout_weight="61" />
+        <ImageButton
+            android:id="@+id/bnFileOK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_check"
+            android:layout_weight="14"
+            android:minHeight="32dp"
+            android:tint="@color/md_white_1000"
+            android:background="@drawable/filepicker_button_disabled"
+            android:layout_marginStart="0.5dp"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFileDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="3dp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tvFolderEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="This folder is empty."
+        android:textColor="@color/textPrimary"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:visibility="gone"/>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

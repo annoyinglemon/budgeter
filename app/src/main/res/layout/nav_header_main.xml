@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:background="@color/md_grey_100"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:ignore="MissingPrefix">
+
+    <ImageView
+        android:id="@+id/ivNavPattern"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/repeater1"
+        android:alpha=".8"/>
+
+    <TextView
+        android:id="@+id/title_nav"
+        fontPath="fonts/Comfortaa-Bold.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/desc_nav"
+        android:layout_marginStart="10dp"
+        android:paddingBottom="3dp"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text="@string/budgetter_nav_title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/md_blue_grey_900"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/desc_nav"
+        fontPath="fonts/Comfortaa-Regular.ttf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:text="Budgeting made easy..."
+        android:textColor="@color/md_grey_800" />
+
+</RelativeLayout>

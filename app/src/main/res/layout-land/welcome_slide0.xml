@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome0_background"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_bottom"
+    android:weightSum="5">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="25dp">
+
+        <ImageView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_welcome_imageviewheight"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/welcome1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/slide4_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WELCOME"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:visibility="visible"
+            fontPath="fonts/Comfortaa-Bold.ttf"/>
+        <TextView
+            android:id="@+id/slide4_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Let us introduce our features."
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_desc"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/slide4_title"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="WELCOME"-->
+    <!--android:textColor="@android:color/white"-->
+    <!--android:textSize="@dimen/slide_title"-->
+    <!--fontPath="fonts/Comfortaa-Bold.ttf"-->
+    <!--android:visibility="visible" />-->
+
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

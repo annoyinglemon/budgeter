@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.lemond.kurt.budgeter.Fragments.Statistics">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartDaily"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:visibility="visible"/>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChartMonthly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:visibility="visible"/>
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartDaily"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:visibility="gone"/>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/lineChartMonthly"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="50"
+        android:visibility="gone"/>
+
+</LinearLayout>

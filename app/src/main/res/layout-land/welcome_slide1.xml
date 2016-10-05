@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome3_background"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_bottom"
+    android:tag="budget_setup"
+    android:weightSum="9"
+    android:gravity="center_vertical">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginBottom="40dp"
+        android:layout_weight="4"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/purse1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coin0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:tag="coin0" />
+
+            <ImageView
+                android:id="@+id/coin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin0"
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin1" />
+
+            <ImageView
+                android:id="@+id/coin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin1"
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin2" />
+
+            <ImageView
+                android:id="@+id/coin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin2"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin3" />
+
+            <ImageView
+                android:id="@+id/coin4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin3"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin4" />
+
+            <ImageView
+                android:id="@+id/coin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin4"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin5" />
+
+            <ImageView
+                android:id="@+id/coin6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin5"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin6" />
+
+            <ImageView
+                android:id="@+id/coin7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin6"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin7" />
+
+            <ImageView
+                android:id="@+id/coin8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin7"
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin8" />
+
+            <ImageView
+                android:id="@+id/coin9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin8"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin9" />
+
+            <ImageView
+                android:id="@+id/coin10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin9"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin10" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/purse2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:layout_marginRight="-5dp">
+
+            <ImageView
+                android:id="@+id/coin11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:tag="coin11" />
+
+            <ImageView
+                android:id="@+id/coin12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin11"
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin12" />
+
+            <ImageView
+                android:id="@+id/coin13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin12"
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin13" />
+
+            <ImageView
+                android:id="@+id/coin14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin13"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin14" />
+
+            <ImageView
+                android:id="@+id/coin15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin14"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin15" />
+
+            <ImageView
+                android:id="@+id/coin16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin15"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin16" />
+
+            <ImageView
+                android:id="@+id/coin17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin16"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin17" />
+
+            <ImageView
+                android:id="@+id/coin18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin17"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin18" />
+
+            <ImageView
+                android:id="@+id/coin19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin18"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin19" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/purse3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/coin20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="matrix"
+                android:tag="coin20" />
+
+            <ImageView
+                android:id="@+id/coin21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin20"
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin21" />
+
+            <ImageView
+                android:id="@+id/coin22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin21"
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin22" />
+
+            <ImageView
+                android:id="@+id/coin23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin22"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin23" />
+
+            <ImageView
+                android:id="@+id/coin24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin23"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin24" />
+
+            <ImageView
+                android:id="@+id/coin25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin24"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin25" />
+
+            <ImageView
+                android:id="@+id/coin26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coin25"
+
+                android:layout_marginTop="-13dp"
+                android:scaleType="matrix"
+                android:tag="coin26" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <!--<ImageView-->
+        <!--android:layout_width="@dimen/img_width_height"-->
+        <!--android:layout_height="@dimen/img_width_height"-->
+        <!--android:src="@drawable/ic_actual_expenses" />-->
+
+        <TextView
+            android:id="@+id/slide1_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your budget setup"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:visibility="invisible"
+            fontPath="fonts/Comfortaa-Bold.ttf"/>
+
+        <LinearLayout
+            android:id="@+id/slide1_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dots_margin_bottom"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/desc_padding"
+                android:paddingRight="@dimen/desc_padding"
+                android:text="Please enter your desired monthly and daily budget. You can skip this setup and set your budget later at Settings."
+                android:textAlignment="center"
+                android:textColor="@color/md_white_1000"
+                android:textSize="@dimen/slide_desc" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColorHint="@color/md_white_1000">
+
+                <EditText
+                    android:id="@+id/etMonthly"
+                    android:layout_width="@dimen/edittext_width"
+                    android:layout_height="match_parent"
+                    android:hint="Monthly Budget Amount"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/slide_edittext" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbDistri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:checked="false"
+                    android:text="Disperse monthly budget"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/slide_desc_smaller" />
+
+                <ImageView
+                    android:id="@+id/ivMoreInfo"
+                    android:layout_width="@dimen/imageview_width_height"
+                    android:layout_height="@dimen/imageview_width_height"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:src="@android:drawable/ic_dialog_info" />
+            </LinearLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/tilDaily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColorHint="@color/md_white_1000">
+
+                <EditText
+                    android:id="@+id/etDaily"
+                    android:layout_width="@dimen/edittext_width"
+                    android:layout_height="match_parent"
+                    android:hint="Daily Budget Amount"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    android:textColor="@color/md_white_1000"
+                    android:textSize="@dimen/slide_edittext" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

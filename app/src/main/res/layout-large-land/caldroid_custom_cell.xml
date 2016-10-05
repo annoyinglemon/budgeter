@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_cell"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:text="9999"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        fontPath="fonts/Comfortaa-Bold.ttf"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tvCaldroidItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:background="@drawable/caldroid_items_bg"
+            android:textColor="@color/md_white_1000"
+            android:padding="3dp"
+            android:singleLine="true"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/tvCaldroidExpenseTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:background="@drawable/caldroid_total_bg"
+            android:textColor="@color/md_white_1000"
+            android:padding="3dp"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/custom_cell"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="68dp"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="3dp"-->
+        <!--android:layout_marginTop="2dp"-->
+        <!--android:text="99"-->
+        <!--android:textSize="11sp"-->
+        <!--fontPath="fonts/Comfortaa-Bold.ttf" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginStart="2dp"-->
+        <!--android:paddingTop="4dp"-->
+        <!--android:paddingBottom="4dp">-->
+        <!--<TextView-->
+            <!--android:id="@+id/tvCaldroidItemCount"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/caldroid_items_bg"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="@color/md_white_1000"-->
+            <!--android:textSize="12sp"-->
+            <!--android:singleLine="true"-->
+            <!--android:ellipsize="marquee"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tvCaldroidExpenseTotal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/caldroid_total_bg"-->
+            <!--android:padding="2dp"-->
+            <!--android:textColor="@color/md_white_1000"-->
+            <!--android:textSize="12sp"-->
+            <!--android:singleLine="true"-->
+            <!--android:ellipsize="marquee"/>-->
+
+    <!--</LinearLayout>-->
+
+
+
+<!--</LinearLayout>-->

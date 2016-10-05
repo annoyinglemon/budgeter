@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+        <item
+            android:id="@+id/current_month_expenses"
+            android:icon="@drawable/ic_actual_expenses"
+            android:title="Actual Expenses" />
+        <item
+            android:id="@+id/salary_budget"
+            android:icon="@drawable/ic_salary"
+            android:title="Planned Budget" />
+        <item
+            android:id="@+id/saved_commodities"
+            android:icon="@drawable/ic_saved_items"
+            android:title="Saved Items" />
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/ic_calendar_expenses"
+            android:title="Expenses Calendar" />
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_graphs"
+            android:title="Budget Statistics" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+    </group>
+    <!--<group android:id="@+id/db" android:checkableBehavior="none">-->
+        <!--<item-->
+            <!--android:id="@+id/nav_db"-->
+            <!--android:icon="@drawable/ic_database"-->
+            <!--android:title="Backup/Import Database" />-->
+    <!--</group>-->
+</menu>

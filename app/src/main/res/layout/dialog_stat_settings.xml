@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingEnd="25dp"
+    android:paddingStart="25dp"
+    android:paddingTop="15dp"
+    android:layout_gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data: "
+            android:layout_marginBottom="3dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbExpenses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Expenses"
+                android:layout_marginEnd="5dp"/>
+
+            <RadioButton
+                android:id="@+id/rbSavings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:checked="false"
+                android:text="Savings" />
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month and Year: "
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/bnPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="DECEMBER 2016"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:drawableStart="@drawable/ic_calendar"
+            android:theme="@style/AppTheme.Button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chart Type:"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/rgChartTypes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Bar Chart"
+                android:layout_marginEnd="5dp"/>
+
+            <RadioButton
+                android:id="@+id/rbLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:checked="false"
+                android:text="Line Chart" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+</LinearLayout>

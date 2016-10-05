@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_cell"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="2dp"
+        android:text="99"
+        android:textSize="11sp"
+        fontPath="fonts/Comfortaa-Bold.ttf" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="2dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+        <TextView
+            android:id="@+id/tvCaldroidItemCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caldroid_items_bg"
+            android:padding="2dp"
+            android:textColor="@color/md_white_1000"
+            android:textSize="9sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+
+        <TextView
+            android:id="@+id/tvCaldroidExpenseTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/caldroid_total_bg"
+            android:padding="2dp"
+            android:textColor="@color/md_white_1000"
+            android:textSize="8.5sp"
+            android:singleLine="true"
+            android:ellipsize="marquee"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

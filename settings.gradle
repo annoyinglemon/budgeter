@@ -1,0 +1,1 @@
+include ':app', ':android-gif-drawable-1.1.17', ':mpandroidchartlibrary-2-2-4', ':calligraphy-2.2.0'

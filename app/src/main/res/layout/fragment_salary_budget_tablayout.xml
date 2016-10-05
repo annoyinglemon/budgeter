@@ -1,0 +1,81 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dlSalaryBudget"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="end">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/salaryBudgetTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <com.lemond.kurt.budgeter.Utilities.CustomViewPager
+            android:id="@+id/salaryBudgetPager"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/salaryBudgetTabLayout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:layout_marginStart="-64dp"
+        android:background="@color/md_white_1000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                fontPath="fonts/Comfortaa-Bold.ttf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginLeft="15dp"
+                android:text="Search Result:"
+                android:textColor="@color/md_white_1000" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvSalaryBudgetSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/pbSearchingSalaryBudget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvSearchNoMatched"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="No items matched your keyword."
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

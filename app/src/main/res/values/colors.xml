@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/md_teal_500</color>
+    <color name="colorPrimaryDark">@color/md_teal_700</color>
+    <color name="colorPrimaryLight">@color/md_teal_100</color>
+    <color name="colorAccent">@color/md_red_500</color>
+    <color name="itemHighlight">@color/md_teal_200</color>
+    <color name="textPrimary">@color/md_grey_900</color>
+    <color name="textSecondary">#727272</color>
+    <color name="colorDivider">#B6B6B6</color>
+    <color name="textAndIcons">@color/md_white_1000</color>
+    <color name="rowBackground">#F1F1F1</color>
+
+    <!-- Screens background color-->
+    <color name="bg_welcome0">@color/md_teal_500</color>
+    <color name="bg_welcome1">@color/md_blue_400</color>
+    <color name="bg_welcome2">@color/md_light_blue_400</color>
+    <color name="bg_welcome3">@color/md_cyan_400</color>
+    <color name="bg_welcome4">@color/md_green_400</color>
+
+    <array name="nav_color">
+        <item>@color/md_teal_600</item>
+        <item>@color/md_blue_600</item>
+        <item>@color/md_light_blue_600</item>
+        <item>@color/md_cyan_600</item>
+        <item>@color/md_green_600</item>
+    </array>
+
+    <array name="array_dot_active">
+        <item>@color/md_teal_800</item>
+        <item>@color/md_blue_800</item>
+        <item>@color/md_light_blue_800</item>
+        <item>@color/md_cyan_800</item>
+        <item>@color/md_green_800</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/md_teal_200</item>
+        <item>@color/md_blue_200</item>
+        <item>@color/md_light_blue_200</item>
+        <item>@color/md_cyan_200</item>
+        <item>@color/md_green_200</item>
+    </array>
+
+</resources>

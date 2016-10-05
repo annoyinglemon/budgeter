@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="11">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+        <EditText
+            android:id="@+id/editSalary_salaryAmount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Update Budget"
+            android:inputType="numberDecimal"
+            android:textAlignment="center" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:paddingStart="13dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/lvSalaryHistoryLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budget History:"
+            android:textColor="@color/md_white_1000"
+            android:textSize="15sp"
+            fontPath="fonts/Comfortaa-Bold.ttf" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvSalaryHistory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="?listPreferredItemHeightSmall"
+    android:weightSum="14">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:background="@drawable/quantity_circle"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvFirstLetter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                fontPath="fonts/Comfortaa-Bold.ttf"
+                android:textSize="17sp"
+                android:textColor="@color/md_white_1000"
+                android:text="S" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="8"
+        android:gravity="center_vertical"
+        android:paddingStart="5dp">
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="Super Item Name"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textPrimary"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:gravity="center_vertical">
+        <TextView
+            android:id="@+id/tvItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="$ 567.99"
+            android:textSize="14sp"
+            android:gravity="center_vertical"
+            />
+    </LinearLayout>
+</LinearLayout>

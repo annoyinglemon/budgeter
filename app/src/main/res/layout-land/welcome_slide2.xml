@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome1_background"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:paddingBottom="@dimen/padding_bottom">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:paddingLeft="@dimen/gif_paddingleftright"
+        android:paddingRight="@dimen/gif_paddingleftright"
+        android:paddingTop="@dimen/gif_paddingtop">
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gif_calendar" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/slide2_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expenses Calendar"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            fontPath="fonts/Comfortaa-Bold.ttf"/>
+
+        <TextView
+            android:id="@+id/slide2_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="Keep track of your expenses each day!"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_desc"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</LinearLayout>

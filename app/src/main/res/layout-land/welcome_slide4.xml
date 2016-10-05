@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome4_background"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_bottom"
+    android:weightSum="5">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.25"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_welcome_imageviewheight"
+            android:gravity="center"
+            android:paddingTop="12dp">
+
+            <ImageView
+                android:id="@+id/list"
+                android:layout_width="@dimen/slide4_list_width"
+                android:layout_height="match_parent"
+                android:src="@drawable/welcome1" />
+
+            <ImageView
+                android:id="@+id/money_90"
+                android:layout_width="@dimen/money_width"
+                android:layout_height="@dimen/money_height"
+                android:layout_alignLeft="@+id/list"
+                android:layout_marginLeft="@dimen/money3_margin_left"
+                android:layout_marginTop="@dimen/money3_margin_top"
+                android:src="@drawable/money" />
+
+            <ImageView
+                android:id="@+id/money_45"
+                android:layout_width="@dimen/money_width"
+                android:layout_height="@dimen/money_height"
+                android:layout_alignLeft="@+id/list"
+                android:layout_marginLeft="@dimen/money2_margin_left"
+                android:layout_marginTop="@dimen/money2_margin_top"
+                android:src="@drawable/money" />
+
+            <ImageView
+                android:id="@+id/money_0"
+                android:layout_width="@dimen/money_width"
+                android:layout_height="@dimen/money_height"
+                android:layout_alignLeft="@+id/list"
+                android:layout_marginLeft="@dimen/money1_margin_left"
+                android:layout_marginTop="@dimen/money1_margin_top"
+                android:src="@drawable/money" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2.75"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/slide4_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HAPPY BUDGETING!"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_title"
+            android:visibility="invisible"
+            fontPath="fonts/Comfortaa-Bold.ttf"/>
+
+        <TextView
+            android:id="@+id/slide4_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="@dimen/desc_padding"
+            android:paddingRight="@dimen/desc_padding"
+            android:text="You are good to go!"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/slide_desc"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+</LinearLayout>
