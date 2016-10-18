@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="C:/Users/kurt_capatan/Desktop/budgeter_db_20160823.db"/><window><current_tab id="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1476"/><expanded_item id="0" parent="-1"/><expanded_item id="1" parent="-1"/><expanded_item id="2" parent="-1"/><expanded_item id="3" parent="-1"/></tab_structure><tab_browse><current_table name="saved_items_salary_budget"/><column_widths data="AAAABAAAADIAcwBhAHYAZQBkAF8AaQB0AGUAbQBzAF8AcwBhAGwAYQByAHkAXwBiAHUAZABnAGUAdAAAAAQAAAAFAAAA4wAAAAQAAACoAAAAAwAAAJEAAAACAAAA3wAAADYAcwBhAHYAZQBkAF8AaQB0AGUAbQBzAF8AYQBjAHQAdQBhAGwAXwBlAHgAcABlAG4AcwBlAHMAAAAGAAAABgAAAHAAAAAFAAAAcAAAAAQAAADBAAAAAwAAAHAAAAACAAAAcAAAAAEAAABwAAAAJABzAGEAdgBlAGQAXwBkAGEAaQBsAHkAXwBzAGEAbABhAHIAeQAAAAMAAAADAAAAZAAAAAIAAABkAAAAAQAAAGQAAAAgAGEAbgBkAHIAbwBpAGQAXwBtAGUAdABhAGQAYQB0AGEAAAABAAAAAAAAAAA="/><sort column="0" order="0"/></tab_browse><tab_sql><sql name="SQL 1">Select * from saved_items;
+
+SELECT * FROM saved_items_salary_budget where salary_item_name = 'Breakfast';
+
+SELECT distinct actual_expense_name FROM saved_items_actual_expenses order by actual_expense_name; 
+
+SELECT DISTINCT actual_expense_name FROM saved_items_actual_expenses order by actual_expense_name; 
+SELECT DISTINCT salary_item_name FROM saved_items_salary_budget order by salary_item_name; 
+
+SELECT DISTINCT actual_expense_name FROM saved_items_actual_expenses NATURAL JOIN saved_items_salary_budget;
+
+INSERT INTO saved_items_salary_budget (salary_item_name, salary_item_price, salary_item_quantity, salary_item_duration)
+VALUES ('Mango Shake', 250, 10, 'monthly');
+
+SELECT  salary_item_name, actual_expense_name  FROM saved_items_salary_budget left outer JOIN saved_items_actual_expenses
+      ON saved_items_salary_budget.salary_item_name  = saved_items_actual_expenses.actual_expense_name;
+	  
+SELECT distinct saved_items_actual_expenses.actual_expense_name, count(*) as NUM, saved_items_salary_budget.salary_item_name, count(saved_items_salary_budget.salary_item_quantity)  FROM saved_items_actual_expenses  left outer JOIN saved_items_salary_budget
+      ON saved_items_salary_budget.salary_item_name  = saved_items_actual_expenses.actual_expense_name order by saved_items_salary_budget.salary_item_name desc;
+	   
+SELECT actual_expense_name, total(actual_expense_quantity) as total_actual_quantity, total(actual_expense_price) as total_actual_price, 
+          salary_item_name, total(salary_item_quantity) as total_quantity, total(salary_item_price) as total_price FROM saved_items_actual_expenses    
+		  LEFT OUTER JOIN saved_items_salary_budget ON saved_items_salary_budget.salary_item_name = saved_items_actual_expenses.actual_expense_name GROUP BY salary_item_name ORDER BY salary_item_name ;
+
+/********************* GET ALL ROWS WITH actual_expense_name = salary_item_name ************************/
+SELECT actual_expense_name, total(actual_expense_quantity) as total_actual_quantity, total(actual_expense_price) as total_actual_price, 
+          salary_item_name, total(salary_item_quantity) as total_quantity, total(salary_item_price) as total_price FROM saved_items_actual_expenses    
+		  LEFT OUTER JOIN saved_items_salary_budget ON saved_items_salary_budget.salary_item_name = saved_items_actual_expenses.actual_expense_name 
+		  WHERE  saved_items_salary_budget.salary_item_name IS NOT NULL AND saved_items_actual_expenses.actual_expense_name IS NOT NULL
+		  GROUP BY salary_item_name ORDER BY salary_item_name ;	  
+
+SELECT actual_expense_name, total(actual_expense_quantity) as total_quantity, total(actual_expense_price) as total_price
+          FROM saved_items_actual_expenses LEFT OUTER JOIN saved_items_salary_budget 
+		  ON saved_items_actual_expenses.actual_expense_name  = saved_items_salary_budget.salary_item_name 
+		  WHERE  saved_items_salary_budget.salary_item_name IS  NULL
+		  GROUP BY actual_expense_name ORDER BY actual_expense_name ;	  
+		
+SELECT salary_item_name, total(salary_item_quantity) as total_quantity, total(salary_item_price) as total_price 
+		  FROM saved_items_salary_budget LEFT OUTER JOIN saved_items_actual_expenses 
+		  ON saved_items_salary_budget.salary_item_name = saved_items_actual_expenses.actual_expense_name
+		  WHERE  saved_items_actual_expenses.actual_expense_name IS  NULL
+		 GROUP BY salary_item_name ORDER BY salary_item_name ;		
+	
+WHERE saved_items_salary_budget.salary_item_name is null
+			  
+	SELECT EMP_ID, NAME, DEPT FROM COMPANY INNER JOIN DEPARTMENT
+      ON COMPANY.ID = DEPARTMENT.EMP_ID
+		  
+INSERT INTO saved_items_actual_expenses (actual_expense_name, actual_expense_price, actual_expense_quantity, actual_expense_duration)
+VALUES ('UV fare', 40, 1, 'monthly');
+
+SELECT actual_expense_name, actual_expense_quantity, actual_expense_price FROM saved_items_actual_expenses order by actual_expense_name ; 
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>
